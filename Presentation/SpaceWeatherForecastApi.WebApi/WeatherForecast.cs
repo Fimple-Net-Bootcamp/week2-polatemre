@@ -1,4 +1,4 @@
-namespace SpaceWeather
+namespace SpaceWeatherForecastApi.WebApi
 {
     public class WeatherForecast
     {

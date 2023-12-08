@@ -3,7 +3,21 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.0.31903.59
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SpaceWeather", "SpaceWeather\SpaceWeather.csproj", "{43B3662E-F8EC-4DE7-AE33-98AF4167C546}"
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Core", "Core", "{9A33EB05-61CC-4067-863B-BECE73DA93D7}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Infrastructure", "Infrastructure", "{BD055FF6-CA23-4868-BFB0-57B2C38BAD7C}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Presentation", "Presentation", "{5302017E-E976-421B-BE22-0C8D5642727E}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SpaceWeatherForecastApi.Application", "Core\SpaceWeatherForecastApi.Application\SpaceWeatherForecastApi.Application.csproj", "{88F9B1C2-1C92-40F0-A18A-42FE6386C2AF}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SpaceWeatherForecastApi.Domain", "Domain\SpaceWeatherForecastApi.Domain\SpaceWeatherForecastApi.Domain.csproj", "{A2352C1C-4C58-45F3-BC68-F081B1EE0426}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SpaceWeatherForecastApi.Infrastructure", "Infrastructure\SpaceWeatherForecastApi.Infrastructure\SpaceWeatherForecastApi.Infrastructure.csproj", "{2BD7E071-AC6F-4BFC-AF9F-520A2B7281FD}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SpaceWeatherForecastApi.Persistence", "Infrastructure\SpaceWeatherForecastApi.Persistence\SpaceWeatherForecastApi.Persistence.csproj", "{9E92231C-5A24-4BF4-882A-810D79F50718}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SpaceWeatherForecastApi.WebApi", "Presentation\SpaceWeatherForecastApi.WebApi\SpaceWeatherForecastApi.WebApi.csproj", "{89971FF7-1A77-4E47-8439-2E8EDF089A36}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -11,13 +25,36 @@ Global
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{43B3662E-F8EC-4DE7-AE33-98AF4167C546}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{43B3662E-F8EC-4DE7-AE33-98AF4167C546}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{43B3662E-F8EC-4DE7-AE33-98AF4167C546}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{43B3662E-F8EC-4DE7-AE33-98AF4167C546}.Release|Any CPU.Build.0 = Release|Any CPU
+		{88F9B1C2-1C92-40F0-A18A-42FE6386C2AF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{88F9B1C2-1C92-40F0-A18A-42FE6386C2AF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{88F9B1C2-1C92-40F0-A18A-42FE6386C2AF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{88F9B1C2-1C92-40F0-A18A-42FE6386C2AF}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A2352C1C-4C58-45F3-BC68-F081B1EE0426}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A2352C1C-4C58-45F3-BC68-F081B1EE0426}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A2352C1C-4C58-45F3-BC68-F081B1EE0426}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A2352C1C-4C58-45F3-BC68-F081B1EE0426}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2BD7E071-AC6F-4BFC-AF9F-520A2B7281FD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2BD7E071-AC6F-4BFC-AF9F-520A2B7281FD}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2BD7E071-AC6F-4BFC-AF9F-520A2B7281FD}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2BD7E071-AC6F-4BFC-AF9F-520A2B7281FD}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9E92231C-5A24-4BF4-882A-810D79F50718}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9E92231C-5A24-4BF4-882A-810D79F50718}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9E92231C-5A24-4BF4-882A-810D79F50718}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9E92231C-5A24-4BF4-882A-810D79F50718}.Release|Any CPU.Build.0 = Release|Any CPU
+		{89971FF7-1A77-4E47-8439-2E8EDF089A36}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{89971FF7-1A77-4E47-8439-2E8EDF089A36}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{89971FF7-1A77-4E47-8439-2E8EDF089A36}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{89971FF7-1A77-4E47-8439-2E8EDF089A36}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{88F9B1C2-1C92-40F0-A18A-42FE6386C2AF} = {9A33EB05-61CC-4067-863B-BECE73DA93D7}
+		{A2352C1C-4C58-45F3-BC68-F081B1EE0426} = {9A33EB05-61CC-4067-863B-BECE73DA93D7}
+		{2BD7E071-AC6F-4BFC-AF9F-520A2B7281FD} = {BD055FF6-CA23-4868-BFB0-57B2C38BAD7C}
+		{9E92231C-5A24-4BF4-882A-810D79F50718} = {BD055FF6-CA23-4868-BFB0-57B2C38BAD7C}
+		{89971FF7-1A77-4E47-8439-2E8EDF089A36} = {5302017E-E976-421B-BE22-0C8D5642727E}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {61CBEAD1-029D-4924-AA4B-DD15E3B3642C}
