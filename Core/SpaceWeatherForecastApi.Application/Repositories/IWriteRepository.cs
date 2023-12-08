@@ -15,7 +15,7 @@ namespace SpaceWeatherForecastApi.Application.Repositories
         bool UpdateRange(List<T> models);
         bool Remove(T model);
         bool RemoveRange(List<T> models);
-        Task<bool> RemoveAsync(string id);
+        Task<bool> RemoveAsync(int id);
         Task<int> SaveAsync();
     }
 }

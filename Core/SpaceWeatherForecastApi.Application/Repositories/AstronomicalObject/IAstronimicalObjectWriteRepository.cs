@@ -2,6 +2,6 @@
 
 namespace SpaceWeatherForecastApi.Application.Repositories;
 
-public interface IAstronimicalObjectWriteRepository: IWriteRepository<AstronimicalObject>
+public interface IAstronomicalObjectWriteRepository: IWriteRepository<AstronomicalObject>
 {
 }

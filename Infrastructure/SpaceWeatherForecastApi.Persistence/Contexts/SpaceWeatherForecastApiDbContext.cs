@@ -9,17 +9,10 @@ namespace SpaceWeatherForecastApi.Persistence.Contexts
         public SpaceWeatherForecastApiDbContext(DbContextOptions options) : base(options)
         { }
 
-        public DbSet<AstronimicalObject> AstronimicalObjects { get; set; }
+        public DbSet<AstronomicalObject> AstronomicalObjects { get; set; }
 
         protected override void OnModelCreating(ModelBuilder builder)
         {
-            //builder.Entity<AstronimicalObject>()
-            //    .HasKey(b => b.Id);
-
-            //builder.Entity<AstronimicalObject>()
-            //    .HasIndex(o => o.OrderCode)
-            //    .IsUnique();
-
             base.OnModelCreating(builder);
         }
         public override async Task<int> SaveChangesAsync(CancellationToken cancellationToken = default)

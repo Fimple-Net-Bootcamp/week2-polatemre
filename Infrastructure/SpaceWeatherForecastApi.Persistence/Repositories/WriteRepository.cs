@@ -46,9 +46,9 @@ namespace SpaceWeatherForecastApi.Persistence.Repositories
             return true;
         }
 
-        public async Task<bool> RemoveAsync(string id)
+        public async Task<bool> RemoveAsync(int id)
         {
-            T model = await Table.FirstOrDefaultAsync(x => x.Id == Guid.Parse(id));
+            T model = await Table.FirstOrDefaultAsync(x => x.Id == id);
             return Remove(model);
         }
 

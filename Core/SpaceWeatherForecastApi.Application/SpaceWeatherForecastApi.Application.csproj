@@ -16,4 +16,8 @@
     <ProjectReference Include="..\..\Domain\SpaceWeatherForecastApi.Domain\SpaceWeatherForecastApi.Domain.csproj" />
   </ItemGroup>
 
+  <ItemGroup>
+    <Folder Include="Features\Models\" />
+  </ItemGroup>
+
 </Project>

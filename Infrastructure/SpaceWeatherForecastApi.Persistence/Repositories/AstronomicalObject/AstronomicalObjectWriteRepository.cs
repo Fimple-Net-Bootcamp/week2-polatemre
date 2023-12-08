@@ -9,9 +9,9 @@ using System.Threading.Tasks;
 
 namespace SpaceWeatherForecastApi.Persistence.Repositories
 {
-    internal class AstronimicalObjectWriteRepository : WriteRepository<AstronimicalObject>, IAstronimicalObjectWriteRepository
+    internal class AstronomicalObjectWriteRepository : WriteRepository<AstronomicalObject>, IAstronomicalObjectWriteRepository
     {
-        public AstronimicalObjectWriteRepository(SpaceWeatherForecastApiDbContext context) : base(context)
+        public AstronomicalObjectWriteRepository(SpaceWeatherForecastApiDbContext context) : base(context)
         {
         }
     }

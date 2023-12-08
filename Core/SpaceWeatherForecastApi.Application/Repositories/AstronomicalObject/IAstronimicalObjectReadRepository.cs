@@ -2,6 +2,6 @@
 
 namespace SpaceWeatherForecastApi.Application.Repositories;
 
-public interface IAstronimicalObjectReadRepository: IReadRepository<AstronimicalObject>
+public interface IAstronomicalObjectReadRepository: IReadRepository<AstronomicalObject>
 {
 }

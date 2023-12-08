@@ -3,6 +3,8 @@ using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.DependencyInjection;
 using SpaceWeatherForecastApi.Application.Repositories;
 using SpaceWeatherForecastApi.Persistence.Repositories;
+using SpaceWeatherForecastApi.Application.Abstractions.Services;
+using SpaceWeatherForecastApi.Persistence.Services;
 
 namespace SpaceWeatherForecastApi.Persistence
 {
@@ -12,10 +14,10 @@ namespace SpaceWeatherForecastApi.Persistence
         {
             services.AddDbContext<SpaceWeatherForecastApiDbContext>(option => option.UseNpgsql(Configuration.ConnectionString));
 
-            services.AddScoped<IAstronimicalObjectReadRepository, AstronimicalObjectReadRepository>();
-            services.AddScoped<IAstronimicalObjectWriteRepository, AstronimicalObjectWriteRepository>();
+            services.AddScoped<IAstronomicalObjectReadRepository, AstronomicalObjectReadRepository>();
+            services.AddScoped<IAstronomicalObjectWriteRepository, AstronomicalObjectWriteRepository>();
 
-            //services.AddScoped<IAstronimicalObjectService, AstronimicalObjectService>();
+            services.AddScoped<IAstronomicalObjectService, AstronomicalObjectService>();
         }
     }
 }

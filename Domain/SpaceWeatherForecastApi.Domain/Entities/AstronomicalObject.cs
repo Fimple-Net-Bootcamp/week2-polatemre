@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace SpaceWeatherForecastApi.Domain.Entities
 {
-    public class AstronimicalObject : BaseEntity
+    public class AstronomicalObject : BaseEntity
     {
         public string Name { get; set; }
         public string Description { get; set; }
